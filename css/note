@@ -1,0 +1,117 @@
+<!-- --------------------- Display
+1. Block
+  * Can change "width" and "height" but it won't work if we put "Display" as "Inline"
+    Block elements
+      - Paragraphs (<p>)
+      - Headers (<h1> through <h6>)
+      - Divisions (<div>)
+      - Lists and list items (<ol>, <ul>, <li>)
+      - Forms (<form>)
+
+2. Inline
+  * Can't change "width" and "height" but it will work if we put "Display" as "Inline"
+    Inline elements
+      - Spans (<span>)
+      - images (<img>)
+      - Anchors (<a>)
+
+3. Inline-Block
+  * Can change "width" and "height" and also it will work if we put "Display-inline"
+  so as the same elements it will stick together in the same line and then block
+  another elements in that particular line.
+
+4.None
+  * "Display: None" is removing that element like it's never been existing in the page.
+  * "Visibility: hidden" it will make that element disappear but it keep the original
+  position of that element like it still there but just can't see it.
+------------------ -->
+
+
+
+<!-- ----------------------- Position
+The position element will be worked only with Coordinates elements.
+
+Coordinates Element:
+  - top
+  - bottom
+  - left
+  - right
+
+
+1. Static
+  * Default working followed by HTML style
+
+2. Relative
+  * Relate to only particular element such as
+    img {
+      position: relative;
+      left: 200px;
+    }
+
+    Means that the position of that img is related to each other in specific element
+    only by itself(no parent) and it will count from left of the img and go to the right for 200px.
+
+3. Absolute
+  * Relate to only particular element such as
+    img {
+      position: absolute;
+      top: 200px;
+    }
+
+    Means that the position of that img is related to the whole body(in this case means
+    'body' which is parent of 'body' than itself) and it will effect to all other elements to got moved.
+
+    It will count from top of the body and stay away form the top of the page for 200px
+    means that it will appear below of the page for 200px.
+
+4. Fixed
+  * To fixed that particular element without moving when scrolling up or down from the page
+    img {
+      position: fixed;
+      top: 0px;
+    }
+
+    Means it will stay on the top always even we scroll the page down
+------------------ -->
+
+
+<!-- ----------------------- font-size
+  16px = 100% = 1em
+
+There are 3 types to choose:
+1. px
+  example:
+    body = font-size = 20px
+    h1 = font-size = 90px
+      * h1 stay in 90px
+      * means that it's not related to their parent
+
+    - In case that a user set font size default of Chrome to be smaller or larger than normal size,
+      the h1 size will not change even though other font size in body part has changed
+
+2. %
+
+    - In case that a user set font size default of Chrome to be smaller or larger than normal size,
+      the h1 size will change by the proper scale font size with body part
+
+3. em (rem)
+  example:
+    body = font-size = 1em
+    h1 = font-size = 5em
+      * h1 size will be 5 times bigger that body font size
+      * means that it's related to their parent font size
+
+    - In case that a user set font size default of Chrome to be smaller or larger than normal size,
+      the h1 size will not change even though other font size in body part has changed
+
+    # In case we use 'rem' instead of just 'em', h1 will stick in that number and
+      don't care about it's parent(which is body font size)
+------------------------- -->
+
+
+
+      <!--
+      .btn{
+        color: #5EAAA8;
+      }
+      -->
